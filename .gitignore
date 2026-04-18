@@ -1,3 +1,6 @@
+# Local npm auth (never commit tokens)
+.npmrc
+
 node_modules/
 dist/
 examples/playground/dist/

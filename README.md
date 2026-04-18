@@ -1,6 +1,7 @@
-[中文文档 / Chinese docs](./README.zh-CN.md)
 
-# vite-plugin-audio-compress
+[![License MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**English** | [中文](./README.zh-CN.md)
 
 [Vite](https://vitejs.dev/) plugin for compressing and converting audio assets using `ffmpeg-static` and `execa`. It works in **dev** (middleware + cache) and **build** (bundle rewrite; each matched asset is replaced in place).
 
@@ -16,11 +17,13 @@
 ## Install
 
 ```bash
-pnpm add vite-plugin-audio-compress ffmpeg-static execa
+# npm
+npm i -D vite-plugin-audio-compress
+# pnpm
+pnpm i -D vite-plugin-audio-compress
+#yarn
+yarn add -D vite-plugin-audio-compress
 ```
-
-> `ffmpeg-static` and `execa` are runtime dependencies of this plugin.
-
 ## Usage
 
 ```ts
@@ -31,11 +34,6 @@ export default defineConfig({
   plugins: [audioCompress()],
 });
 ```
-
-## License
-
-[MIT](./LICENSE)
-
 ## Options
 
 Types are exported from `vite-plugin-audio-compress` and `vite-plugin-audio-compress/type`.

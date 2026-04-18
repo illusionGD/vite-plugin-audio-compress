@@ -1,6 +1,8 @@
-[English documentation / 英文文档](./README.md)
 
-# vite-plugin-audio-compress
+[![License MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+[English](./README.md) | **中文**
 
 基于 `ffmpeg-static` 与 `execa` 的 Vite 音频压缩与格式转换插件，支持**开发模式**（中间件 + 缓存）与**打包模式**（就地替换 bundle 内音频资源并重写引用）。
 
@@ -16,9 +18,13 @@
 ## 安装
 
 ```bash
-pnpm add vite-plugin-audio-compress ffmpeg-static execa
+# npm
+npm i -D vite-plugin-audio-compress
+# pnpm
+pnpm i -D vite-plugin-audio-compress
+#yarn
+yarn add -D vite-plugin-audio-compress
 ```
-
 ## 使用方式
 
 ```ts
@@ -29,11 +35,6 @@ export default defineConfig({
   plugins: [audioCompress()],
 });
 ```
-
-## 开源协议
-
-[MIT](./LICENSE)
-
 ## 配置说明
 
 类型可从 `vite-plugin-audio-compress` 与 `vite-plugin-audio-compress/type` 导入。
