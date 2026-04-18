@@ -1,0 +1,18 @@
+{
+  "name": "@vite-plugin-audio-compress/playground",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare:wav": "node scripts/write-wav.mjs",
+    "dev": "pnpm run prepare:wav && vite",
+    "build": "pnpm run prepare:wav && vite build",
+    "dev:vite6": "pnpm --dir vite6 run dev",
+    "build:vite6": "pnpm --dir vite6 run build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.6",
+    "vite": "^8.0.8",
+    "vue": "^3.5.32"
+  }
+}

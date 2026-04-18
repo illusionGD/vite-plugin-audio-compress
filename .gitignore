@@ -1,0 +1,14 @@
+node_modules/
+dist/
+examples/playground/dist/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+*.local
+.vite-temp/
+coverage/
+.idea/
+.vscode/*
+!.vscode/extensions.json
