@@ -60,6 +60,9 @@ importers:
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
+      vite:
+        specifier: ^8.0.8
+        version: 8.0.8(@types/node@25.6.0)(jiti@2.6.1)
 
   examples/playground:
     devDependencies:
